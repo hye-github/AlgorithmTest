@@ -1,4 +1,4 @@
-package programmers.level1.stringtonum;
+package programmers.level1.strtoint;
 
 public class Solution {
     public int solution(String s) {
