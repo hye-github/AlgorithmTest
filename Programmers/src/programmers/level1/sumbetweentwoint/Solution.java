@@ -22,14 +22,15 @@ public class Solution {
         int i = 0;
 
         if(a>b){
-            for(i = 0; i<a; i++){
+            for(i = 0; i<(a-b); i++){
                 answer += (b+i);
             }
-
+            answer+=a;
         } else if(b>a){
-            for(i = 0; i<b; i++){
+            for(i = 0; i<(b-a); i++){
                 answer += (a+i);
             }
+            answer+=b;
         } else if(b==a) {
             return a;
         }
