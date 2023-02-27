@@ -3,7 +3,7 @@ package programmers.level1.makeweirdcharacters;
 public class Solution {
     public String solution(String s) {
         String answer = "";
-        String[] arr = s.split(" ");
+        String[] arr = s.split(" ", -1);
 
         for(int k = 0 ; k < arr.length ; k++){
             String[] wordArr = arr[k].split("");
@@ -14,13 +14,12 @@ public class Solution {
         }
 
         answer += String.join(" ", arr);
-
         return answer;
     }
 
     public static void main(String[] args) {
         Solution sol = new Solution();
-        String s = "SSFDSFring toUpperCase     t oU pperCase  ckdksdfsdfsdfdsf              ";
+        String s = "     SSFDSFring toUpperCase     t oU pperCase  ckdksdfsdfsdfdsf     ";
         System.out.println(sol.solution(s));
     }
 }
