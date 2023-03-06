@@ -17,8 +17,14 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
-        String s = "10a0";
-        System.out.println(sol.solution(s));
+//        Solution sol = new Solution();
+        String s = "1090";
+//        System.out.println(sol.solution(s));
+        String[] arr = s.split("[0-9]");
+
+        System.out.println(arr[0]);
+        System.out.println(arr[1]);
+        System.out.println(arr[2]);
+
     }
 }
