@@ -1,11 +1,21 @@
 package programmers.level0.findmode;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class Solution {
     public int solution(int[] array) {
-        int answer = -1;
+        Arrays.sort(array);
         int count = 0;
+        if(array.length==1){return array[0];}
+
+        else {
+            for (int i = 0; i < array.length; i++) {
+
+            }
+        }
+
+        int answer = -1;
         HashMap map = new HashMap();
         for (int i = 0; i < array.length; i++) {
             for (int j = i; j < array.length - i; j++) {
